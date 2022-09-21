@@ -18,9 +18,10 @@
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
-                                    <table id="example" class="display min-w850">
+                                <table id="example" class="display min-w850 dataTable" role="grid" aria-describedby="example_info">
                                         <thead>
                                             <tr>
+                                                <th>Id</th>
                                                 <th>Tanggal</th>
                                                 <th>Waktu</th>
                                                 <th>Lokasi</th>
@@ -29,8 +30,12 @@
                                         </thead>
 
                                         <tbody>
+                                        @php
+                                            $no = 1;
+                                        @endphp
                                             @foreach ($data as $row)
                                             <tr>
+                                                <td>{{$no++}}</td>
                                                 <td>{{ $row->tanggal }}</td>
                                                 <td>{{ $row->waktu }}</td>
                                                 <td>{{ $row->lokasi }}</td>

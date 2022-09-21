@@ -1101,9 +1101,7 @@ pre {
 
   .col-md-12 {
     flex: 0 0 100%;
-    max-width: 100%;
-    margin-top: 100px;
- }
+    max-width: 100%; }
 
   .order-md-first {
     order: -1; }
@@ -9614,7 +9612,6 @@ a {
   .nav-header .logo-abbr {
     max-width: 52px;
     margin-right: 20px;
-    /* margin-top: 10px; */
   }
     @media only screen and (max-width: 575px) {
       .nav-header .logo-abbr {
@@ -21512,7 +21509,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 .photo-content {
   position: relative; }
   .photo-content .cover-photo {
-    background: url(../images/profile/cover.jpg);
+    background: url(../images/profile/mint.png);
     background-size: cover;
     background-position: center;
     min-height: 250px;

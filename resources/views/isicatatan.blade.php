@@ -1,6 +1,13 @@
 @extends('layout.main')
 @section('content')
-<div class="col-md-12">
+<div class="container-fluid">
+    <div class="page-titles">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="javascript:void(0)">Form</a></li>
+			<li class="breadcrumb-item active"><a href="javascript:void(0)">Isi Catatan Perjalanan</a></li>
+		</ol>
+    </div>
+    <div class="col-lg-12">
     <div class="card">
         <div class="card-header">
             <h4 class="card-title">Isi Catatan Perjalanan</h4>
@@ -28,7 +35,8 @@
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary">Tambah Catatan</button>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

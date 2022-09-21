@@ -40,7 +40,7 @@
         <div class="nav-header">
             <a href="index.html" class="brand-logo">
                 <img class="logo-abbr" src="./images/safe.png" alt="">
-                <h1>LOVESELF</h1>
+                <h2 class="mt-3 ms-4">LOVESELF</h2>
             </a>
 
             <div class="nav-control">
@@ -77,18 +77,19 @@
 								</div>
                             <li class="nav-item dropdown header-profile">
                                 <a class="nav-link" href="javascript:void(0)" role="button" data-toggle="dropdown">
-                                    <img src="images/profile/17.jpg" width="20" alt=""/>
+                                    <img src="images/profile/beomgyu.jpg" width="20" alt=""/>
 									<div class="header-info">
-										<span class="text-black"><strong>Ferisha Hanan</strong></span>
-										<p class="fs-12 mb-0">Super Admin</p>
+										<span class="text-black"><strong>Beomgyu Choi</strong></span>
+										<p class="fs-12 mb-0">User</p>
 									</div>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right">
-                                    <a href="/profil" class="dropdown-item ai-icon">
+                                    <a href="/profile" class="dropdown-item ai-icon">
                                         <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                                         <span class="ml-2">Profile </span>
                                     </a>
-                                    <a href="/logout" class="dropdown-item ai-icon">
+                                    <a href="/logout" method="POST" class="dropdown-item ai-icon">
+                                    @csrf
                                         <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
                                         <span class="ml-2">Logout </span>
                                     </a>
@@ -114,15 +115,11 @@
 						<span class="nav-text">Dashboard</span>
 					    </a>
 					</li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-note"></i>
-							<span class="nav-text">Table</span>
-						</a>
-                        <ul aria-expanded="false">
-                            <li><a href="/catatan">Table Catatan Perjalanan</a></li>
-                            <li><a href="/datauser">Table Data User</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="/catatan" class="ai-icon" aria-expanded="false">
+                        <i class="flaticon-381-note"></i>
+						<span class="nav-text">Catatan Perjalanan</span>
+					    </a>
+					</li>
                     <li><a href="/isicatatan" class="ai-icon" aria-expanded="false">
 							<i class="glyph-icon flaticon-381-pencil"></i>
 							<span class="nav-text">Isi Data</span>

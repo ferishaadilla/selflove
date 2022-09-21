@@ -29,8 +29,8 @@ Route::post('/logout', [LoginController::class, 'logout']);
 Route::get('/main', function () {
     return view('dashboard');
 });
-Route::get('/profil', function () {
-    return view('profil');
+Route::get('/profile', function () {
+    return view('profile');
 });
 
 //catatan perjalanan
