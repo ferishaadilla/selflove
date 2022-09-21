@@ -1101,7 +1101,9 @@ pre {
 
   .col-md-12 {
     flex: 0 0 100%;
-    max-width: 100%; }
+    max-width: 100%;
+    margin-top: 100px;
+ }
 
   .order-md-first {
     order: -1; }
@@ -9610,7 +9612,10 @@ a {
   transition: all .2s ease;
   z-index: 5; }
   .nav-header .logo-abbr {
-    max-width: 52px; }
+    max-width: 52px;
+    margin-right: 20px;
+    /* margin-top: 10px; */
+  }
     @media only screen and (max-width: 575px) {
       .nav-header .logo-abbr {
         max-width: 40px; } }

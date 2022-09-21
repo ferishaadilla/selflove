@@ -7,5 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Catatan extends Model
 {
-    use HasFactory;
+    // use HasFactory;
+    protected $fillable = [
+        'tanggal',
+        'waktu',
+        'lokasi',
+        'suhu',
+    ];
 }
