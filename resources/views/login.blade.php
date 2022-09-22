@@ -29,7 +29,7 @@
                                     @csrf 
                                         <div class="form-group">
                                             <label class="mb-1 text-white"><strong>Email</strong></label>
-                                            <input type="email" name="email" class="form-control" value="hello@example.com">
+                                            <input type="email" name="email" class="form-control" placeholder="hello@example.com">
                                             @error('email')
                                                 <div class="invalid-feedback">
                                                     {{$message}}
@@ -38,7 +38,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label class="mb-1 text-white"><strong>Password</strong></label>
-                                            <input type="password" name="password" class="form-control" value="Password">
+                                            <input type="password" name="password" class="form-control" placeholder="Password">
                                             @error('password') 
                                                 <div class="invalid-feedback">
                                                     {{$message}}

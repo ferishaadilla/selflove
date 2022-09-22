@@ -8,6 +8,24 @@
             </div>
         </div>
     </div>
+	<div class="col-12">
+		<div class="widget-stat card bg-primary">
+			<div class="card-body  p-4">
+				<div class="media">
+					<span class="mr-3">
+						<i class="flaticon-381-note"></i>
+					</span>
+					<div class="media-body text-white">
+						<p class="mb-1">Total Catatan</p>
+						<h3 class="text-white">{{$jumlahcatatan}} Catatan</h3>
+						<div class="progress mb-2 mt-4 bg-secondary">
+                            <div class="progress-bar progress-animated bg-light" style="width: {{$jumlahcatatan}}%"></div>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
 	<div class="row">
 		<div class="col-xl-6 col-xxl-12">
 			<div class="card">
@@ -27,7 +45,7 @@
 								<a type="button" href="/catatan" class="btn btn-primary">Lihat Catatan</a>
 							</div>
 							<div class="progress" style="height:5px;">
-								<div class="progress-bar bg-warning" style="width: 60%; height:5px;" role="progressbar">
+								<div class="progress-bar bg-warning" style="width: 100%; height:5px;" role="progressbar">
 								</div>
 							</div>
 						</div>
@@ -36,7 +54,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>	
 	</div>
 	<div class="row">
 		<div class="col-xl-6 col-xxl-12">
@@ -56,7 +74,7 @@
 								<a type="button" href="/isicatatan" class="btn btn-primary">Isi Catatan</a>
 							</div>
 							<div class="progress" style="height:5px;">
-								<div class="progress-bar bg-warning" style="width: 42%; height:5px;" role="progressbar">
+								<div class="progress-bar bg-warning" style="width: 100%; height:5px;" role="progressbar">
 								</div>
 							</div>
 						</div>

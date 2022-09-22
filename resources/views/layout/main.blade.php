@@ -79,8 +79,8 @@
                                 <a class="nav-link" href="javascript:void(0)" role="button" data-toggle="dropdown">
                                     <img src="images/profile/beomgyu.jpg" width="20" alt=""/>
 									<div class="header-info">
-										<span class="text-black"><strong>Beomgyu Choi</strong></span>
-										<p class="fs-12 mb-0">User</p>
+										<span class="text-black"><strong>{{auth()->user()->name}}</strong></span>
+										<p class="fs-12 mb-0">0003278621</p>
 									</div>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right">
@@ -113,9 +113,9 @@
                     <li><a href="/main" class="ai-icon" aria-expanded="false">
                         <i class="flaticon-381-networking"></i>
 						<span class="nav-text">Dashboard</span>
-					    </a>
-					</li>
-                    <li><a href="/catatan" class="ai-icon" aria-expanded="false">
+                    </a>
+                </li>
+                <li><a href="/catatan" class="ai-icon" aria-expanded="false">
                         <i class="flaticon-381-note"></i>
 						<span class="nav-text">Catatan Perjalanan</span>
 					    </a>
@@ -127,7 +127,7 @@
 					</li>
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="flaticon-381-layer-1"></i>
-							<span class="nav-text">Pages</span>
+							<span class="nav-text">User Page</span>
 						</a>
                         <ul aria-expanded="false">
                             <li><a href="/register">Register</a></li>

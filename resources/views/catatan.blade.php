@@ -11,21 +11,21 @@
 
 
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-lg-12">
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title">Catatan Perjalanan</h4>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
-                                <table id="example" class="display min-w850 dataTable" role="grid" aria-describedby="example_info">
+                                <table id="example" class="display min-w850 dataTable table table-responsive-md" role="grid" aria-describedby="example_info">
                                         <thead>
                                             <tr>
                                                 <th>Id</th>
                                                 <th>Tanggal</th>
                                                 <th>Waktu</th>
                                                 <th>Lokasi</th>
-                                                <th>Suhu</th>
+                                                <th>Suhu Tubuh</th>
                                             </tr>
                                         </thead>
 
@@ -40,6 +40,11 @@
                                                 <td>{{ $row->waktu }}</td>
                                                 <td>{{ $row->lokasi }}</td>
                                                 <td>{{ $row->suhu }}</td>
+                                                <td>
+													<div class="d-flex">
+														<a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
+													</div>
+												</td>
                                             </tr>
                                             @endforeach
                                         </tbody>
