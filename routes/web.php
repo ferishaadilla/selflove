@@ -50,4 +50,6 @@ Route::post('/insertcatatan', [CatatanController::class,'insertcatatan'])->name(
 Route::get('/editdata/{id}', [CatatanController::class,'editdata'])->name('editdata');
 Route::post('/updatedata/{id}', [CatatanController::class,'updatedata'])->name('updatedata');
 
+Route::get('/delete/{id}', [CatatanController::class,'delete'])->name('delete');
+
 
