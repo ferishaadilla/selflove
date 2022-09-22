@@ -23,4 +23,16 @@ class CatatanController extends Controller
         Catatan::create($request->all());
         return redirect()->route('catatan');
     }
+
+     public function editdata($id){
+        $data = Catatan::find($id);
+        // dd($data);
+        return view('editcatatan', compact('data'));
+     }
+
+     public function updatedata(Request $request, $id){
+        $data = Catatan::find($id);
+        $data->update($request->all());
+        return redirect()->route('catatan');
+     }
 }
