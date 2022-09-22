@@ -42,8 +42,13 @@
                                                 <td>{{ $row->suhu }}</td>
                                                 <td>
 													<div class="d-flex">
+<<<<<<< HEAD
 														<a href="/editcatatan/{{ $row->id }}" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
 														<a href="#" class="btn btn-danger shadow btn-xs sharp mr-1"><i class="fa fa-trash"></i></a>
+=======
+														<a href="/editdata/{{ $row->id }}" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
+														<a href="/delete/{{ $row->id }}" class="btn btn-danger shadow btn-xs sharp mr-1"><i class="fa fa-trash"></i></a>
+>>>>>>> 1f06726ac3d4f35bda868aed7551c1f8ad2b6a76
 													</div>
 												</td>
                                             </tr>
