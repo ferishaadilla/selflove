@@ -24,22 +24,21 @@ class CatatanController extends Controller
         return redirect()->route('catatan');
     }
 
-     public function editcatatan($id){
-        $data = Catatan::find($id);
-        // dd($data);
-        return view('editcatatan', compact('data'));
-     }
+    public function editcatatan($id){
+       $data = Catatan::find($id);
+       // dd($data);
+       return view('editcatatan', compact('data'));
+    }
 
-     public function updatedata(Request $request, $id){
-        $data = Catatan::find($id);
-        $data->update($request->all());
-        return redirect()->route('catatan');
-     }
-
-     public function delete($id){
-        $data = Catatan::find($id);
-        $data->delete();
-        return redirect()->route('catatan');
-
-     }
+    public function updatedata(Request $request, $id){
+       $data = Catatan::find($id);
+       $data->update($request->all());
+       return redirect()->route('catatan');
+    }
+    
+    public function delete($id){
+       $data = Catatan::find($id);
+       $data->delete();
+       return redirect()->route('catatan');
+    }
 }

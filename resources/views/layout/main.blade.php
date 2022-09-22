@@ -120,11 +120,13 @@
 						<span class="nav-text">Catatan Perjalanan</span>
 					    </a>
 					</li>
+                    @if (auth()->user()->role == 'user')
                     <li><a href="/isicatatan" class="ai-icon" aria-expanded="false">
 							<i class="glyph-icon flaticon-381-pencil"></i>
 							<span class="nav-text">Isi Data</span>
 						</a>
 					</li>
+                    @endif
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
 							<i class="flaticon-381-layer-1"></i>
 							<span class="nav-text">User Page</span>

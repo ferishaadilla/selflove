@@ -56,6 +56,7 @@
 			</div>
 		</div>	
 	</div>
+	@if (auth()->user()->role == 'user')
 	<div class="row">
 		<div class="col-xl-6 col-xxl-12">
 			<div class="card">
@@ -85,5 +86,6 @@
 			</div>
 		</div>
 	</div>
+	@endif
 </div>
 @endsection

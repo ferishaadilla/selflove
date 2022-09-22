@@ -2,6 +2,7 @@
 
 use App\Models\Catatan;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\CatatanController;
 use App\Http\Controllers\RegisterController;
@@ -16,7 +17,7 @@ use App\Http\Controllers\RegisterController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+ 
 //register
 Route::get('/register', [RegisterController::class, 'index']);
 Route::post('/register', [RegisterController::class, 'store']);
@@ -41,7 +42,7 @@ Route::get('/profile', function () {
     return view('profile');
 });
 
-//catatan perjalanan
+//catatan perjalanan user
 Route::get('/catatan', [CatatanController::class,'index'])->name('catatan');
 
 Route::get('/isicatatan', [CatatanController::class,'isicatatan'])->name('isicatatan');
@@ -51,5 +52,3 @@ Route::get('/editcatatan/{id}', [CatatanController::class,'editcatatan'])->name(
 Route::post('/updatedata/{id}', [CatatanController::class,'updatedata'])->name('updatedata');
 
 Route::get('/delete/{id}', [CatatanController::class,'delete'])->name('delete');
-
-
