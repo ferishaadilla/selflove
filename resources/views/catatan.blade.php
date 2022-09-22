@@ -35,14 +35,14 @@
                                         @endphp
                                             @foreach ($data as $row)
                                             <tr>
-                                                <td>{{$no++}}</td>
+                                                <td>{{ $no++ }}</td>
                                                 <td>{{ $row->tanggal }}</td>
                                                 <td>{{ $row->waktu }}</td>
                                                 <td>{{ $row->lokasi }}</td>
                                                 <td>{{ $row->suhu }}</td>
                                                 <td>
 													<div class="d-flex">
-														<a href="/editdata/{{ $row->id }}" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
+														<a href="/editcatatan/{{ $row->id }}" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
 														<a href="#" class="btn btn-danger shadow btn-xs sharp mr-1"><i class="fa fa-trash"></i></a>
 													</div>
 												</td>

@@ -24,7 +24,7 @@ class CatatanController extends Controller
         return redirect()->route('catatan');
     }
 
-     public function editdata($id){
+     public function editcatatan($id){
         $data = Catatan::find($id);
         // dd($data);
         return view('editcatatan', compact('data'));
