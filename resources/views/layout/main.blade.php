@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>LoveSelf</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
-	<link rel="stylesheet" href="./vendor/chartist/css/chartist.min.css">
-    <link href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
-	<link href="./vendor/owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon.png">
+	<link rel="stylesheet" href="./assets/vendor/chartist/css/chartist.min.css">
+    <link href="./assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+	<link href="./assets/vendor/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -39,7 +39,7 @@
         ***********************************-->
         <div class="nav-header">
             <a href="index.html" class="brand-logo">
-                <img class="logo-abbr" src="./images/safe.png" alt="">
+                <img class="logo-abbr" src="./assets/images/safe.png" alt="">
                 <h2 class="mt-3 ms-4">LOVESELF</h2>
             </a>
 
@@ -77,7 +77,7 @@
 								</div>
                             <li class="nav-item dropdown header-profile">
                                 <a class="nav-link" href="javascript:void(0)" role="button" data-toggle="dropdown">
-                                    <img src="images/profile/pp.jpg" width="20" alt=""/>
+                                    <img src="assets/images/profile/pp.jpg" width="20" alt=""/>
 									<div class="header-info">
 										<span class="text-black"><strong>{{auth()->user()->name}}</strong></span>
 										<p class="fs-12 mb-0">0003278621</p>
@@ -120,11 +120,13 @@
 						<span class="nav-text">Catatan Perjalanan</span>
 					    </a>
 					</li>
+                @if (auth()->user()->role == 'admin')
                 <li><a href="/datauser" class="ai-icon" aria-expanded="false">
                         <i class="flaticon-381-user"></i>
 						<span class="nav-text">Data User</span>
 					    </a>
 					</li>
+                @endif
                     @if (auth()->user()->role == 'user')
                     <li><a href="/isicatatan" class="ai-icon" aria-expanded="false">
 							<i class="glyph-icon flaticon-381-pencil"></i>
@@ -153,7 +155,7 @@
         ***********************************-->
         <div class="content-body">
             <!-- row -->
-			@yield('content')
+            @yield('content')
         </div>
         <!--**********************************
             Content body end
@@ -189,21 +191,21 @@
         Scripts
     ***********************************-->
     <!-- Required vendors -->
-    <script src="./vendor/global/global.min.js"></script>
-	<script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-	<script src="./vendor/chart.js/Chart.bundle.min.js"></script>
-    <script src="./js/custom.min.js"></script>
-	<script src="./js/deznav-init.js"></script>
-	<script src="./vendor/owl-carousel/owl.carousel.js"></script>
+    <script src="./assets/vendor/global/global.min.js"></script>
+	<script src="./assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+	<script src="./assets/vendor/chart.js/Chart.bundle.min.js"></script>
+    <script src="./assets/js/custom.min.js"></script>
+	<script src="./assets/js/deznav-init.js"></script>
+	<script src="./assets/vendor/owl-carousel/owl.carousel.js"></script>
 	
 	<!-- Chart piety plugin files -->
-    <script src="./vendor/peity/jquery.peity.min.js"></script>
+    <script src="./assets/vendor/peity/jquery.peity.min.js"></script>
 	
 	<!-- Apex Chart -->
-	<script src="./vendor/apexchart/apexchart.js"></script>
+	<script src="./assets/vendor/apexchart/apexchart.js"></script>
 	
 	<!-- Dashboard 1 -->
-	<script src="./js/dashboard/dashboard-1.js"></script>
+	<script src="./assets/js/dashboard/dashboard-1.js"></script>
 	<script>
 		function carouselReview(){
 			/*  testimonial one function by = owl.carousel.js */

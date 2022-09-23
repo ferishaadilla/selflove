@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 use App\Models\Catatan;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
@@ -36,7 +37,8 @@ Route::group(['middleware'=>['auth','hakakses:user']], function(){
 //dashboard
 Route::get('/main', function () {
     $jumlahcatatan = Catatan::count();
-    return view('dashboard', compact('jumlahcatatan'));
+    $datauser = User::count();
+    return view('dashboard', compact('jumlahcatatan','datauser'));
 });
 
 Route::get('/profile', function () {

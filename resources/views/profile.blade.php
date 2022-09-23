@@ -17,7 +17,7 @@
                         </div>
                         <div class="profile-info">
 							<div class="profile-photo">
-								<img src="images/profile/pp.jpg" class="img-fluid rounded-circle" alt="">
+								<img src="assets/images/profile/pp.jpg" class="img-fluid rounded-circle" alt="">
 							</div>
 							<div class="profile-details">
 								<div class="profile-name px-3 pt-2">

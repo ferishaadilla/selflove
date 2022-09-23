@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Catatan;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class CatatanController extends Controller
 {
@@ -25,9 +26,9 @@ class CatatanController extends Controller
     }
 
     public function editcatatan($id){
-       $data = Catatan::find($id);
-       // dd($data);
-       return view('editcatatan', compact('data'));
+        $data = Catatan::find($id);
+
+        return view('editcatatan', compact('data'));
     }
 
     public function updatedata(Request $request, $id){

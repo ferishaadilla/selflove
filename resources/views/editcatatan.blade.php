@@ -14,7 +14,7 @@
         </div>
         <div class="card-body">
             <div class="basic-form">
-                <form action="/updatedata/{{ $data->id }}" method="post">
+                <form action="/updatedata/{{ $data->id }}" method="POST">
                 @csrf
                     <div class="form-row">
                         <div class="form-group col-md-6">

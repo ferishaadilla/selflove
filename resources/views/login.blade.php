@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Login</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
-    <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon.png">
+    <link href="./assets/css/style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 
@@ -22,7 +22,7 @@
                             <div class="col-xl-12">
                                 <div class="auth-form">
 									<div class="text-center mb-3">
-										<a href="index.html"><img src="images/safe.png" alt=""></a>
+										<a href="index.html"><img src="assets/images/safe.png" alt=""></a>
 									</div>
                                     <h4 class="text-center mb-4 text-white">Login your account</h4>
                                     <form role="form" action="/login" method="post">
@@ -74,10 +74,10 @@
         Scripts
     ***********************************-->
     <!-- Required vendors -->
-    <script src="./vendor/global/global.min.js"></script>
-	<script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-    <script src="./js/custom.min.js"></script>
-    <script src="./js/deznav-init.js"></script>
+    <script src="./assets/vendor/global/global.min.js"></script>
+	<script src="./assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="./assets/js/custom.min.js"></script>
+    <script src="./assets/js/deznav-init.js"></script>
 
 </body>
 
