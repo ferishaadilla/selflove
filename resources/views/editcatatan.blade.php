@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('content')
+@section('content') 
 <div class="container-fluid">
     <div class="page-titles">
 		<ol class="breadcrumb">

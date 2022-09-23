@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\CatatanController;
+use App\Http\Controllers\DatauserController;
 use App\Http\Controllers\RegisterController;
 
 /*
@@ -52,3 +53,8 @@ Route::get('/editcatatan/{id}', [CatatanController::class,'editcatatan'])->name(
 Route::post('/updatedata/{id}', [CatatanController::class,'updatedata'])->name('updatedata');
 
 Route::get('/delete/{id}', [CatatanController::class,'delete'])->name('delete');
+
+//data user 
+Route::get('/datauser', [DatauserController::class,'index'])->name('datauser');
+
+Route::get('/delete/{id}', [DatauserController::class,'delete'])->name('delete');

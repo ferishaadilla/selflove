@@ -77,7 +77,7 @@
 								</div>
                             <li class="nav-item dropdown header-profile">
                                 <a class="nav-link" href="javascript:void(0)" role="button" data-toggle="dropdown">
-                                    <img src="images/profile/beomgyu.jpg" width="20" alt=""/>
+                                    <img src="images/profile/pp.jpg" width="20" alt=""/>
 									<div class="header-info">
 										<span class="text-black"><strong>{{auth()->user()->name}}</strong></span>
 										<p class="fs-12 mb-0">0003278621</p>
@@ -118,6 +118,11 @@
                 <li><a href="/catatan" class="ai-icon" aria-expanded="false">
                         <i class="flaticon-381-note"></i>
 						<span class="nav-text">Catatan Perjalanan</span>
+					    </a>
+					</li>
+                <li><a href="/datauser" class="ai-icon" aria-expanded="false">
+                        <i class="flaticon-381-user"></i>
+						<span class="nav-text">Data User</span>
 					    </a>
 					</li>
                     @if (auth()->user()->role == 'user')
